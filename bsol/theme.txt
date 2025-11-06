@@ -1,0 +1,41 @@
+# Global options
+title-text: ""
+desktop-image: "background.png"
+desktop-color: "#000000"
+terminal-font: "Victor Mono Italic 10"
+terminal-box: "terminal_box_*.png"
+terminal-left: "0"
+terminal-top: "0"
+terminal-width: "100%"
+terminal-height: "100%"
+terminal-border: "0"
+
+# Boot menu
++ boot_menu {
+  right = 5%
+  top = 100%
+  width = 23%
+  height = 32%
+  item_font =  "Victor Mono Bold Italic 12"
+  item_color = "#cccccc"
+  selected_item_color = "#ffffff"
+  icon_width = 25
+  icon_height = 25
+  item_icon_space = 10
+  item_height = 20
+  item_padding = 1
+  item_spacing = 5
+  selected_item_pixmap_style = "select_*.png"
+}
+
+
+# Countdown
++ label {
+  right = 5%
+  top = 0%
+  align = "left"
+  id = "__timeout__"
+  text = "Selected OS will start in %d seconds"
+  color = "#cccccc"
+  font = "Victor Mono Bold Italic 28"
+}
